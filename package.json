@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "Christian Fleschhut",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4"
+  }
 }
