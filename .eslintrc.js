@@ -3,13 +3,13 @@ module.exports = {
     browser: true,
     es2020: true,
   },
-  extends: [
-    'airbnb-base',
-  ],
+  extends: ['airbnb-base'],
   parserOptions: {
     ecmaVersion: 11,
     sourceType: 'module',
   },
+  plugins: ['immutable'],
   rules: {
+    'immutable/no-mutation': 2,
   },
 };

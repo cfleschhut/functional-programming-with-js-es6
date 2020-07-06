@@ -1,3 +1,6 @@
-const sayHello = (name) => console.log(`Hello ${name}`);
+const person = {
+  name: 'John',
+  age: 44,
+};
 
-sayHello("Shaun");
+person.name = 'Bob';
