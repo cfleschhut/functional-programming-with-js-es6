@@ -1,6 +1,14 @@
-const person = {
-  name: 'John',
-  age: 44,
+const DEVELOPMENT = true;
+
+const fetchDataReal = () => {
+  // time-intensive operations here
 };
 
-person.name = 'Bob';
+const fetchDataFake = () => ({
+  name: 'John Doe',
+  age: 44,
+});
+
+const fetchData = DEVELOPMENT ? fetchDataFake : fetchDataReal;
+
+fetchData();
